@@ -11,9 +11,13 @@
      enable_plugin networking-vsphere http://git.openstack.org/openstack/networking-vsphere
 
 
-3. Add the following required flag in local.conf to enable the OVSvApp ML2 MechanismDriver::
+3. Specify the preferred Networking-vSphere ML2 MechanismDriver in local.conf::
 
      Q_ML2_PLUGIN_MECHANISM_DRIVERS=ovsvapp
+
+   or::
+
+     Q_ML2_PLUGIN_MECHANISM_DRIVERS=vmware_dvs
 
 
 4. Add the following required flags in local.conf to enable the OVSvApp Agent::
